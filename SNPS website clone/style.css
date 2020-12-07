@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --roboto: 'Roboto',
+        sans-serif;
+    --openSans: 'Open Sans',
+        sans-serif;
+}
+
+/* font-family: 'Open Sans',
+sans-serif;
+ */
+
+#navbar {
+    background-color: rgb(211, 3, 3);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0 0px 8px 8px;
+}
+
+.navbar-items {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    height: 8vh;
+}
+
+.nav-logo {
+    background-color: white;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    letter-spacing: 1.4px;
+}
+
+.nav-items>li {
+    list-style-type: none;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: white;
+}
+
+.dropbtn {
+    background-color: #d32200;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+
+
+.dropdown-content {
+    background-color: #d32200;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    min-width: 160px;
+    border-radius: 0 0 8px 8px;
+    animation: growDown 0.3s ease-in-out forwards;
+    transform-origin: top center;
+
+}
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+
+    80% {
+        transform: scaleY(1.1)
+    }
+
+    100% {
+        transform: scaleY(1)
+    }
+}
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 12px 6px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+.dropdown-content>a:hover{
+    background-color: tomato;
+    border-radius: 8px;
+}
+/* All items of welcome section starts here */
+#welcome {
+    background-color: #F5F5F5;
+}
+
+.grid {
+    display: grid;
+    height: 60vh;
+    grid-template-columns: 700px 300px;
+    width: 70%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+
+
+.grid-item1>h2 {
+    font-size: 30px;
+    color: green;
+    font-family: var(--roboto);
+    margin: 20px;
+    margin-left: 0;
+}
+
+.grid-item1>p {
+    font-family: var(--openSans);
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.grid-item2 {
+    background-color: white;
+    height: 250px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 7px 7px 5px 0px rgba(234, 234, 234, 0.24);
+}
+
+#news-corner>h4 {
+    font-size: 25px;
+    font-family: var(--openSans);
+    margin-bottom: 30px;
+}
+
+/* All items of welcome section ends here */
+
+/* Features section start */
+#features {
+    background: linear-gradient(45deg, #E83B61, #F17824);
+}
+
+.grid-features {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    height: 70vh;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 70%;
+    margin: auto;
+
+}
+
+.feature-img {
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.feature-heading,
+.feature-para {
+    color: white;
+    font-family: var(--openSans);
+
+}
+
+.feature-heading {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.feature-para {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 100;
+    width: 244px;
+    line-height: 28px;
+    align-content: center;
+}
